@@ -1,0 +1,85 @@
+:root {
+    --black: #2b2b2b;
+    --blue: #2f65f9;
+    --dark-blue: #070439;
+    --green: #3da08f;
+    --soft-blue: #585989;
+    --white: #fff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100dvh;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+.nav {
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 2em;
+}
+
+.nav__menu-link {
+    color: var(--black);
+}
