@@ -21,6 +21,7 @@ a {
 }
 
 body {
+    color: var(--black);
     font-family: "Roboto", sans-serif;
     min-height: 100dvh;
 }
@@ -63,7 +64,8 @@ ul {
     font-weight: 400;
 }
 
-.nav {
+.nav,
+.hero__content {
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -72,7 +74,7 @@ ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2.5em;
 }
 
 .nav__menu {
@@ -82,4 +84,56 @@ ul {
 
 .nav__menu-link {
     color: var(--black);
+}
+
+.hero__content {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    padding: 4em 2.5em;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero__title {
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+.hero__form {
+    display: flex;
+    gap: .8em;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.hero__input {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: .8em;
+    outline: 0;
+    min-width: 290px;
+}
+
+.hero__button {
+    background-color: var(--blue);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+    color: var(--white);
+    cursor: pointer;
+    padding: .8em 4em;
 }
