@@ -67,7 +67,8 @@ ul {
 
 .nav,
 .hero__content,
-.productivity__container {
+.productivity__container,
+.early-access__container {
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -130,14 +131,18 @@ ul {
     min-width: 290px;
 }
 
-.hero__button {
+.hero__button,
+.early-access__button {
     background-color: var(--blue);
     border: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0,0,0,.2);
     color: var(--white);
     cursor: pointer;
-    padding: .8em 4em;
+}
+
+.hero__button {
+    padding: 1em 4em;
 }
 
 .divider {
@@ -233,6 +238,37 @@ ul {
 }
 
 .productivity__content,
-.productivity__illustration {
+.productivity__illustration,
+.early-access__content,
+.early-access__form {
     flex-basis: 50%;
+}
+
+.early-access {
+    background-color: var(--soft-blue);
+    color: var(--white);
+}
+
+.early-access__container {
+    display: flex;
+    padding: 4em 2.5em 4em;
+    gap: 24%;
+}
+
+.early-access__form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.early-access__input {
+    border: 0;
+    border-radius: 5px;
+    padding: .8em;
+    width: 100%;
+}
+
+.early-access__button {
+    padding: 1em 2em;
 }
