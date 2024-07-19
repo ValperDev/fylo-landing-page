@@ -17,6 +17,7 @@
 }
 
 a {
+    color: inherit;
     display: inline-block;
     text-decoration: none;
 }
@@ -68,7 +69,8 @@ ul {
 .nav,
 .hero__content,
 .productivity__container,
-.early-access__container {
+.early-access__container,
+.footer__content {
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -250,9 +252,21 @@ ul {
 }
 
 .early-access__container {
+    align-items: center;
     display: flex;
-    padding: 4em 2.5em 4em;
+    padding: 4em 2.5em;
     gap: 24%;
+}
+
+.early-access__content {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.early-access__description {
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 .early-access__form {
@@ -271,4 +285,44 @@ ul {
 
 .early-access__button {
     padding: 1em 2em;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    padding: 4em 2.5em;
+}
+
+.footer__contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact-item {
+    display: flex;
+    gap: 1em;
+}
+
+.footer__contact,
+.footer__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 1em;
+}
+
+.footer__social-link {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    padding: .4em;
 }
