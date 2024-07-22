@@ -33,6 +33,10 @@ h2 {
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     display: block;
     max-width: 100%;
