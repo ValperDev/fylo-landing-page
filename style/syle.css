@@ -333,6 +333,22 @@ ul {
 }
 
 @media only screen and (max-width: 860px) {
+    .nav, .hero__content,
+    .productivity__container,
+    .early-access__container,
+    .footer__content {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .nav__logo {
+        max-width: 85px;
+    }
+
+    .nav__menu-link {
+        font-size: .8rem;
+    }
+
     .hero__content {
         flex-direction: column-reverse;
     }
