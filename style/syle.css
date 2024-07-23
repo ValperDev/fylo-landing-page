@@ -134,7 +134,7 @@ ul {
     border-radius: 5px;
     padding: .8em;
     outline: 0;
-    min-width: 290px;
+    width: clamp(180px, 20vw, 290px);
 }
 
 .hero__button,
@@ -283,6 +283,7 @@ ul {
 .early-access__input {
     border: 0;
     border-radius: 5px;
+    outline: 0;
     padding: .8em;
     width: 100%;
 }
@@ -329,4 +330,35 @@ ul {
     border: 1px solid var(--white);
     border-radius: 50%;
     padding: .4em;
+}
+
+@media only screen and (max-width: 860px) {
+    .hero__content {
+        flex-direction: column-reverse;
+    }
+
+    .hero__text {
+        gap: 2em;
+    }
+
+    .hero__title,
+    .hero__description {
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .hero__description {
+        font-size: .9rem;
+    }
+
+    .hero__form {
+        flex-direction: column;
+    }
+
+    .hero__input {
+        width: 100%;
+    }
 }
