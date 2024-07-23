@@ -377,4 +377,38 @@ ul {
     .hero__input {
         width: 100%;
     }
+
+    .productivity__container {
+        flex-direction: column-reverse;
+    }
+
+    .productivity__illustration {
+        padding-bottom: 3em;
+    }
+
+    .productivity__content {
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .productivity__title {
+        font-size: 1rem;
+    }
+
+    .productivity__description,
+    .productivity__link {
+        font-size: .9rem;
+    }
+
+    .testimonial__quote {
+        font-size: .8rem;
+    }
+
+    .testimonial__author-name {
+        font-size: .7rem;
+    }
+
+    .testimonial__author-title {
+        font-size: .6rem;
+    }
 }
