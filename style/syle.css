@@ -411,4 +411,28 @@ ul {
     .testimonial__author-title {
         font-size: .6rem;
     }
+
+    .early-access__container {
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    .early-access__title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .early-access__description {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .early-access__form {
+        flex-basis: unset;
+        width: 100%;
+    }
+
+    .early-access__button {
+        width: 100%;
+    }
 }
