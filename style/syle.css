@@ -435,4 +435,18 @@ ul {
     .early-access__button {
         width: 100%;
     }
+
+    .footer__contact-info {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .footer__contact-text,
+    .footer__link {
+        font-size: .9rem;
+    }
+
+    .footer__social-list {
+        justify-content: center;
+    }
 }
